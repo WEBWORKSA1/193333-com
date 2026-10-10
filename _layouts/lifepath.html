@@ -12,7 +12,7 @@ layout: default
   <div class="quick"><div><span>Archetype</span><strong>{{ L.name }}</strong></div><div><span>Keywords</span><strong>{{ L.keywords }}</strong></div><div><span>Best matches</span><strong>{{ L.matches }}</strong></div></div>
   <div class="ad-slot" data-slot="top"></div>
   <h2>How to know if you are a Life Path {{ k }}</h2>
-  <p>Reduce your birth month, day and year separately, add the three results and reduce again (keeping 11, 22 and 33 intact). Example: {{ L.example }} <a href="{{ '/tools/life-path-calculator/' | relative_url }}">Use the Life Path calculator</a> to see your own working step by step.</p>
+  <p>Reduce your birth month, day and year separately, add the three results and reduce again (keeping 11, 22 and 33 intact). Worked example: {{ L.example }} <a href="{{ '/tools/life-path-calculator/' | relative_url }}">Use the Life Path calculator</a> to see your own working step by step.</p>
   <h2>Strengths</h2><ul>{% for s in L.strengths %}<li>{{ s }}</li>{% endfor %}</ul>
   <h2>Challenges</h2><ul>{% for s in L.challenges %}<li>{{ s }}</li>{% endfor %}</ul>
   <h2>Career and business</h2><p>{{ L.career }}</p>
@@ -22,7 +22,8 @@ layout: default
   <h2>Advice for Life Path {{ k }}</h2><p>{{ L.advice }}</p>
   <div class="callout">Numerology is a reflective framework, not a scientific predictor. Use these profiles as prompts for self-reflection, not as decisions about people.</div>
   <h2>Other Life Path numbers</h2>
-  <div class="chip-row">{% for x in site.lifepaths %}<a class="chip{% if x.n == page.n %} active{% endif %}" href="{{ x.url | relative_url }}">{{ x.n }}</a>{% endfor %}</div>
+  {% assign lps = site.lifepaths | sort: 'n' %}
+  <div class="chip-row">{% for x in lps %}<a class="chip{% if x.n == page.n %} active{% endif %}" href="{{ x.url | relative_url }}">{{ x.n }}</a>{% endfor %}</div>
   {% include helpful.html %}
   {% include cta-lead.html %}
   <div class="ad-slot" data-slot="bottom"></div>

@@ -1,0 +1,144 @@
+"1":
+  name: The Leader
+  keywords: Independent, driven, original
+  matches: 3, 5, 6
+  overview: "Life Path 1 is the pioneer: self-motivated, decisive and happiest when building something of their own."
+  example: "a birthday of 1 March 1999 gives month 3, day 1 and year 1+9+9+9 = 28 → 10 → 1; 3 + 1 + 1 = 5. (So this date is a 5 — 1s are common among dates whose parts add to 10, 19 or 28.)"
+  strengths: ["Initiative — starts before others feel ready", "Clear vision and strong will", "Comfort with responsibility and decision-making"]
+  challenges: ["Impatience with slower collaborators", "Difficulty asking for help", "Stubbornness when challenged"]
+  career: "Entrepreneurship, leadership roles, product management, independent consulting and any field that rewards original thinking. Ones thrive with ownership and wilt under micromanagement."
+  love: "Ones need a partner who respects their independence and has their own ambitions. Respect and admiration matter as much as romance."
+  money: "Confident earners and decisive investors; the risk is over-concentration in their own ventures without a safety net."
+  advice: "Lead, but build a team. Your ideas scale faster when other people can carry them."
+"2":
+  name: The Diplomat
+  keywords: Sensitive, cooperative, intuitive
+  matches: 4, 6, 8
+  overview: "Life Path 2 is the peacemaker: perceptive, patient and gifted at bringing people together."
+  example: "20 May 2000 gives month 5, day 2 and year 2; 5 + 2 + 2 = 9. Twos arise when month, day and year reduce to a total of 2, 11 or 20."
+  strengths: ["Reading people and situations accurately", "Building consensus and trust", "Attention to detail and timing"]
+  challenges: ["Avoiding conflict too long", "Taking criticism personally", "Undervaluing their own contribution"]
+  career: "Mediation, HR, counselling, client success, partnerships, design and any team role where trust is the product."
+  love: "Devoted, romantic partners who need emotional security and appreciation in return."
+  money: "Careful and cooperative with money, often best when finances are planned with a trusted partner."
+  advice: "Your sensitivity is a strategic advantage. Pair it with clear boundaries."
+"3":
+  name: The Communicator
+  keywords: Creative, expressive, social
+  matches: 1, 5, 9
+  overview: "Life Path 3 is the creative: expressive, optimistic and energised by sharing ideas with others."
+  example: "12 June 1995 gives month 6, day 3 and year 1+9+9+5 = 24 → 6; 6 + 3 + 6 = 15 → 6. Threes appear when the three parts total 3, 12, 21 or 30."
+  strengths: ["Natural storytelling and charisma", "Creative problem-solving", "Lifting the mood of any room"]
+  challenges: ["Scattering focus across too many projects", "Avoiding difficult emotions with humour", "Inconsistent follow-through"]
+  career: "Writing, content, marketing, performance, teaching, sales and social media. Threes earn most when their personality is part of the offer."
+  love: "Fun, warm and affectionate; they need a partner who enjoys conversation and gives them room to shine."
+  money: "Earning comes easily in bursts; budgeting and saving need deliberate systems."
+  advice: "Finish what you start. One finished project beats ten brilliant drafts."
+"4":
+  name: The Builder
+  keywords: Practical, disciplined, loyal
+  matches: 2, 7, 8
+  overview: "Life Path 4 is the builder: dependable, methodical and at their best creating systems that last."
+  example: "Birth dates whose month, day and year reduce to a combined 4, 13, 22 (kept as master 22) or 31 produce a 4 when reduced. Try yours in the calculator."
+  strengths: ["Reliability and work ethic", "Organisation and planning", "Loyalty to people and principles"]
+  challenges: ["Resistance to change", "Over-working", "Being too critical of shortcuts"]
+  career: "Engineering, finance, operations, construction, project management, law and any role that rewards precision."
+  love: "Steady, loyal partners who show love through acts of service and long-term commitment."
+  money: "Natural savers and planners; the risk is excessive caution that misses good opportunities."
+  advice: "Leave room for experimentation inside your structure."
+"5":
+  name: The Adventurer
+  keywords: Free, curious, adaptable
+  matches: 1, 3, 7
+  overview: "Life Path 5 is the explorer: adaptable, curious and energised by change, travel and new experiences."
+  example: "1 March 1999 gives month 3, day 1 and year 28 → 10 → 1; 3 + 1 + 1 = 5."
+  strengths: ["Thrives in change and uncertainty", "Persuasive communicator", "Learns quickly by doing"]
+  challenges: ["Restlessness and boredom", "Impulsive decisions", "Difficulty with routine commitments"]
+  career: "Sales, travel, journalism, entrepreneurship, marketing and any fast-moving field with variety."
+  love: "Exciting, open-minded partners who need freedom and a relationship that keeps growing."
+  money: "Comfortable with risk; benefits from automating savings so freedom has a safety net."
+  advice: "Choose a few commitments worth staying for. Freedom is sweeter with roots."
+"6":
+  name: The Nurturer
+  keywords: Caring, responsible, harmonious
+  matches: 1, 2, 9
+  overview: "Life Path 6 is the caregiver: responsible, warm and devoted to family, community and beauty."
+  example: "12 June 1995 gives 6 + 3 + 6 = 15 → 6."
+  strengths: ["Deep sense of responsibility", "Creating harmony and beauty", "Supporting and teaching others"]
+  challenges: ["Over-giving and martyrdom", "Perfectionism", "Difficulty saying no"]
+  career: "Healthcare, nursing, education, counselling, design, hospitality and community work."
+  love: "Devoted, family-oriented partners who need appreciation and shared responsibility."
+  money: "Generous providers; best results come from budgeting for themselves as carefully as for others."
+  advice: "Care for yourself with the same seriousness you bring to caring for others."
+"7":
+  name: The Seeker
+  keywords: Analytical, intuitive, private
+  matches: 4, 5, 9
+  overview: "Life Path 7 is the thinker: analytical, intuitive and drawn to the deeper questions behind everything."
+  example: "7 July 1991 gives month 7, day 7 and year 1+9+9+1 = 20 → 2; 7 + 7 + 2 = 16 → 7."
+  strengths: ["Research and deep focus", "Original insight", "Comfort with solitude"]
+  challenges: ["Isolation and secrecy", "Scepticism that blocks trust", "Over-thinking decisions"]
+  career: "Science, data, technology, research, writing, strategy and specialist consulting."
+  love: "Thoughtful partners who need intellectual connection and personal space."
+  money: "Methodical investors who do their homework; the risk is analysis paralysis."
+  advice: "Share what you discover. Insight is most valuable when it reaches others."
+"8":
+  name: The Executive
+  keywords: Ambitious, authoritative, results-driven
+  matches: 2, 4, 6
+  overview: "Life Path 8 is the powerhouse: ambitious, strategic and focused on achievement, money and influence."
+  example: "8 August 1998 gives month 8, day 8 and year 1+9+9+8 = 27 → 9; 8 + 8 + 9 = 25 → 7. Eights come from totals of 8, 17, 26 or 35."
+  strengths: ["Strategic thinking and execution", "Natural authority", "Resilience after setbacks"]
+  challenges: ["Workaholism", "Controlling tendencies", "Equating self-worth with status"]
+  career: "Business leadership, finance, real estate, law, investing and scaling organisations."
+  love: "Loyal, protective partners who need a relationship of equals with shared ambition."
+  money: "The most financially driven Life Path; strong earners who benefit from diversification and generosity."
+  advice: "Use power to build others up. Influence compounds when people want you to win."
+"9":
+  name: The Humanitarian
+  keywords: Compassionate, wise, idealistic
+  matches: 3, 6, 7
+  overview: "Life Path 9 is the humanitarian: compassionate, broad-minded and motivated by making the world better."
+  example: "20 May 2000 gives month 5, day 2 and year 2; 5 + 2 + 2 = 9."
+  strengths: ["Empathy and generosity", "Big-picture vision", "Creative and artistic gifts"]
+  challenges: ["Difficulty letting go", "Self-sacrifice", "Disappointment when ideals meet reality"]
+  career: "Non-profit work, education, medicine, the arts, social enterprise and global organisations."
+  love: "Romantic, generous partners who need a shared sense of purpose."
+  money: "Money matters to them as a tool for impact; clear budgets protect their generosity."
+  advice: "Endings are part of your path. Close chapters cleanly and start the next with purpose."
+"11":
+  name: The Intuitive
+  keywords: Inspired, sensitive, visionary
+  matches: 2, 4, 22
+  overview: "Life Path 11 is the first master number: intuitive, inspiring and highly sensitive, with a strong sense of mission."
+  example: "25 December 1990 gives month 12 → 3, day 25 → 7 and year 1+9+9+0 = 19 → 10 → 1; 3 + 7 + 1 = 11, kept as a master number."
+  strengths: ["Exceptional intuition", "Ability to inspire others", "Creative and spiritual insight"]
+  challenges: ["Anxiety and nervous tension", "Self-doubt", "Feeling misunderstood"]
+  career: "Teaching, coaching, the arts, counselling, innovation and leadership roles built on vision."
+  love: "Deeply empathic partners who need emotional safety and patience."
+  money: "Benefit from simple, automated systems that free attention for their bigger work."
+  advice: "Ground your insights in daily practice. Rest is part of the mission."
+"22":
+  name: The Master Builder
+  keywords: Visionary, practical, powerful
+  matches: 4, 8, 11
+  overview: "Life Path 22 is the Master Builder: rare, ambitious and able to turn big visions into concrete reality. Fittingly, the digits of 193333 add up to 22."
+  example: "Dates whose reduced month, day and year total 22 keep that master number. Use the calculator to see whether your date lands there."
+  strengths: ["Large-scale vision with practical execution", "Discipline and leadership", "Building institutions that last"]
+  challenges: ["Pressure of high expectations", "Burnout", "Fear of failing at scale"]
+  career: "Founding companies, architecture, engineering, public policy, infrastructure and large organisations."
+  love: "Committed partners who need support for their ambitions and help remembering to rest."
+  money: "Capable of building significant wealth through long-term projects and patient compounding."
+  advice: "Build in phases. Great structures go up one floor at a time."
+"33":
+  name: The Master Teacher
+  keywords: Compassionate, nurturing, guiding
+  matches: 6, 9, 11
+  overview: "Life Path 33 is the Master Teacher: the rarest master number, associated with compassion, guidance and uplifting others."
+  example: "Only dates whose reduced parts total exactly 33 keep this master number; most of these totals appear later in a long calculation, so check yours with the calculator."
+  strengths: ["Selfless care for others", "Gift for teaching and healing", "Creative and emotional depth"]
+  challenges: ["Martyrdom", "Taking on others’ pain", "Unrealistic standards"]
+  career: "Teaching, healing professions, counselling, ministry, the arts and social impact work."
+  love: "Devoted, nurturing partners who need reciprocity and gratitude."
+  money: "Values service over wealth; benefits from separating personal security from generosity."
+  advice: "Teach by example and protect your energy. You cannot pour from an empty cup."
