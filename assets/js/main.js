@@ -4,6 +4,11 @@
   var BASE = (document.documentElement.getAttribute('data-base') || '');
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  /* Root-relative links in Markdown content: prefix the site base path when served from a sub-folder */
+  if (BASE) $$('a[href^="/"]').forEach(function (a) {
+    var h = a.getAttribute('href');
+    if (h.indexOf('//') !== 0 && h !== BASE && h.indexOf(BASE + '/') !== 0) a.setAttribute('href', BASE + h);
+  });
   var store = {
     get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
@@ -121,11 +126,13 @@
   $$('.yt').forEach(function (el) {
     var id = el.getAttribute('data-id');
     el.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + id + '/hqdefault.jpg)';
-    el.addEventListener('click', function () {
+    var play = function () {
       el.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
         '?autoplay=1&rel=0" title="' + (el.getAttribute('data-title') || 'Video') +
         '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
-    }, { once: true });
+    };
+    el.addEventListener('click', play, { once: true });
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } }, { once: true });
   });
 
   /* ---------- Manual AdSense units (only render when a slot ID is configured) ---------- */
