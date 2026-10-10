@@ -1,0 +1,36 @@
+---
+title: "Numerology: Life Path Numbers, Core Numbers and Calculators"
+short: Numerology
+crumb: Numerology
+eyebrow: Numerology hub
+heading: "Numerology, explained step by step"
+lead: "Find your Life Path, Expression, Soul Urge and Personal Year numbers — and see exactly how each one is calculated."
+description: "Learn numerology the transparent way: Life Path numbers 1–9, master numbers 11, 22 and 33, core-number calculators and worked examples."
+wide: true
+updated: 2026-10-10
+faq:
+  - q: "Which numerology system do you use?"
+    a: "We use the Pythagorean system, the most common in the English-speaking world, where letters A–Z map to 1–9 in repeating order."
+  - q: "What is the most important number in numerology?"
+    a: "The Life Path number, calculated from your full birth date, is considered the core number. Expression, Soul Urge and Personality numbers come from your name."
+  - q: "Is numerology scientific?"
+    a: "No. Numerology is a symbolic and cultural tradition, not a science. We present it as a framework for reflection and show the arithmetic so you can judge it for yourself."
+---
+<h2>The Life Path numbers</h2>
+<div class="grid">{% assign lps = site.lifepaths | sort: 'n' %}{% for x in lps %}{% assign k = x.n | append: '' %}{% assign L = site.data.lifepaths[k] %}<a class="card" href="{{ x.url | relative_url }}"><span class="tag">Life Path {{ k }}</span><h3>{{ L.name }}</h3><p>{{ L.keywords }}</p></a>{% endfor %}</div>
+
+<div class="ad-slot" data-slot="mid"></div>
+
+<h2>The five core numbers</h2>
+<div class="grid">
+<a class="card" href="{{ '/tools/life-path-calculator/' | relative_url }}"><span class="tag">From birth date</span><h3>Life Path</h3><p>Your overall direction and the lessons you keep meeting.</p></a>
+<a class="card" href="{{ '/tools/name-number-calculator/' | relative_url }}"><span class="tag">From full name</span><h3>Expression</h3><p>Your natural talents and how you work.</p></a>
+<a class="card" href="{{ '/tools/name-number-calculator/' | relative_url }}"><span class="tag">From vowels</span><h3>Soul Urge</h3><p>What you want most deeply.</p></a>
+<a class="card" href="{{ '/tools/name-number-calculator/' | relative_url }}"><span class="tag">From consonants</span><h3>Personality</h3><p>How others tend to see you.</p></a>
+<a class="card" href="{{ '/tools/personal-year-calculator/' | relative_url }}"><span class="tag">From date + year</span><h3>Personal Year</h3><p>The theme of the current 12-month cycle.</p></a>
+</div>
+
+<h2>How numerology reduction works</h2>
+<p>Numerology reduces numbers by adding their digits until a single digit remains — except for the master numbers 11, 22 and 33, which are kept. Take the domain number itself: 1 + 9 + 3 + 3 + 3 + 3 = 22, a master number, so 193333 is read as a "Master Builder" number. The same digit-sum rule is a genuine mathematical property: the digital root of any whole number equals its remainder when divided by 9 (with 9 in place of 0), which is why casting out nines has been used to check arithmetic for centuries.</p>
+<h2>Letter values (Pythagorean)</h2>
+<div class="table-wrap"><table class="facts"><thead><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><td>A J S</td><td>B K T</td><td>C L U</td><td>D M V</td><td>E N W</td><td>F O X</td><td>G P Y</td><td>H Q Z</td><td>I R</td></tr></tbody></table></div>
