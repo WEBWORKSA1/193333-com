@@ -8,6 +8,7 @@ lead: "Last updated: October 10, 2026"
 description: "Terms of use for 193333.com, including permitted use, intellectual property, disclaimers and limitation of liability."
 no_cta: true
 ---
+{% capture md %}
 ## Acceptance
 
 By using 193333.com you agree to these terms. If you do not agree, please do not use the site.
@@ -18,7 +19,7 @@ You may use the site for personal, non-commercial purposes and for internal busi
 
 ## Content and intellectual property
 
-The site’s original text, design, code and graphics are owned by 193333.com or its licensors and protected by copyright. Short quotations with attribution and a link are welcome. Third-party names, trademarks and videos belong to their respective owners. See our [trademark &amp; copyright disclosure](/trademark/).
+The site’s original text, design, code and graphics are owned by 193333.com or its licensors and protected by copyright. Short quotations with attribution and a link are welcome. Third-party names, trademarks and videos belong to their respective owners. See our [trademark & copyright disclosure](/trademark/).
 
 ## No professional advice
 
@@ -39,3 +40,4 @@ The site is provided “as is” without warranties of any kind. To the fullest 
 ## Changes
 
 We may update these terms at any time. Continued use after changes means you accept the updated terms.
+{% endcapture %}{{ md | markdownify }}

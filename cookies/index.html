@@ -8,6 +8,7 @@ lead: "Last updated: October 10, 2026"
 description: "How 193333.com uses cookies and local storage, including Google AdSense advertising cookies, and how to control them."
 no_cta: true
 ---
+{% capture md %}
 ## What we use
 
 | Type | Purpose | Set by |
@@ -25,3 +26,4 @@ Google and its partners use cookies to serve ads based on your visits to this an
 You can block or delete cookies in your browser settings. Blocking cookies will not stop the calculators from working, but some preferences will not be remembered.
 
 More detail is in our [privacy policy](/privacy/).
+{% endcapture %}<div class="table-wrap">{{ md | markdownify | replace: '<table>', '<table class="facts">' }}</div>

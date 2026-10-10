@@ -8,6 +8,7 @@ lead: "Last updated: October 10, 2026"
 description: "193333.com disclaimer: numerology and angel-number content is for reflection and entertainment; calculators are educational estimates, not professional advice."
 no_cta: true
 ---
+{% capture md %}
 ## Numerology and angel numbers
 
 Numerology and angel-number interpretations are cultural and spiritual traditions, not sciences. Our readings are offered for reflection, self-discovery and entertainment. They do not predict the future and should not be relied on for decisions about health, relationships, money, employment or legal matters.
@@ -27,3 +28,4 @@ The site displays third-party advertising, including Google AdSense, and clearly
 ## External links
 
 Links to external sites are provided for convenience; we are not responsible for their content.
+{% endcapture %}{{ md | markdownify }}

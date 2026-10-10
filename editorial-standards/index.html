@@ -7,6 +7,7 @@ heading: "Editorial standards &amp; methodology"
 lead: "How we research, calculate, review and correct everything we publish."
 description: "193333 editorial standards: sourcing, calculation methods, numerology conventions, review process, corrections policy and advertising independence."
 ---
+{% capture md %}
 ## Sourcing
 
 Factual claims about mathematics, history, economics and technology are checked against primary or authoritative sources — government publications, academic references, official documentation. Where we summarise others’ work, we paraphrase and link.
@@ -32,3 +33,4 @@ Found an error? Tell us via the [contact page](/contact/) (topic: “Correction 
 ## Independence
 
 Advertising and sponsorship never influence calculator results or readings. Sponsored placements are always labelled.
+{% endcapture %}{{ md | markdownify }}

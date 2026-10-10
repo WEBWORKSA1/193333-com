@@ -8,6 +8,7 @@ lead: "Last updated: October 10, 2026"
 description: "How 193333.com collects, uses and protects information, including cookies and Google AdSense advertising."
 no_cta: true
 ---
+{% capture md %}
 ## Who we are
 
 193333.com (“193333”, “we”, “us”) is an independent informational website. You can reach us through our [contact page](/contact/).
@@ -52,3 +53,4 @@ The site is served over HTTPS. No method of transmission or storage is completel
 ## Changes
 
 We may update this policy. The “last updated” date above shows when it last changed.
+{% endcapture %}{{ md | markdownify }}

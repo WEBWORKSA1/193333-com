@@ -8,6 +8,7 @@ lead: "Last updated: October 10, 2026"
 description: "Trademark and copyright disclosure for 193333.com, including use of the number 193333, third-party marks, embedded videos and copyright notices."
 no_cta: true
 ---
+{% capture md %}
 ## The number “193333”
 
 “193333” is a number. On this website it is used solely as the domain name and as a descriptive site name. We make no claim to exclusive trademark rights in the number itself, and our use is not intended to refer to, imitate or imply affiliation with any product, company, telephone number, postal code, account, catalogue entry or other identifier that may also use the digits 193333. If you believe our use conflicts with your rights, please [contact us](/contact/) and we will review it promptly.
@@ -27,3 +28,4 @@ Videos shown on this site are embedded from YouTube using YouTube’s standard e
 ## Copyright complaints
 
 If you believe content on this site infringes your copyright, send a notice through our [contact page](/contact/) including: identification of the work; the URL of the material; your contact details; a statement of good-faith belief that the use is unauthorised; a statement that the information is accurate; and your physical or electronic signature. We will respond promptly and remove infringing material where appropriate.
+{% endcapture %}{{ md | markdownify }}
