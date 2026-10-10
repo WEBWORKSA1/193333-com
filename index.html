@@ -1,0 +1,119 @@
+---
+layout: default
+title: "193333 — Number Intelligence Hub"
+description: "Angel number meanings, free numerology calculators, a number explorer for any number, and business, money and AI calculators — every result with the math shown."
+faq:
+  - q: "Is everything on 193333 free?"
+    a: "Yes. All calculators, angel-number readings, guides and the Number Blueprint are free. The site is supported by advertising, sponsors and voluntary donations."
+  - q: "Do you store my birth date or name?"
+    a: "Calculators run entirely in your browser. Only forms you choose to submit, such as the Number Blueprint request, are sent to us."
+  - q: "Is numerology scientific?"
+    a: "No. We present numerology and angel numbers as tools for reflection and entertainment, and we show the real mathematics of every number alongside the symbolism."
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Numerology · Angel numbers · Number science · Business math</p>
+      <h1>Every number tells a story. <em>Decode yours.</em></h1>
+      <p class="lead">Find your Life Path, read what the numbers you keep seeing mean, explore the real math of any number — and run the numbers on your money and your business. Free, instant, and always with the working shown.</p>
+      <div class="hero-cta"><a class="btn btn-hi btn-lg" href="{{ '/free-report/' | relative_url }}">Get my free Number Blueprint</a><a class="btn btn-ghost btn-lg" href="{{ '/angel-numbers/' | relative_url }}">Browse angel numbers</a></div>
+      <ul class="trust"><li>12 free tools</li><li>No sign-up to calculate</li><li>Math shown for every result</li></ul>
+    </div>
+    <div>
+      <p class="giant" aria-hidden="true">19<b>3333</b></p>
+      <form class="tool" data-tool="life-path" aria-label="Quick Life Path calculator">
+        <h2>Your Life Path in 10 seconds</h2>
+        <div class="field"><label for="hero-dob">Date of birth</label><input id="hero-dob" name="dob" type="date" required></div>
+        <button class="btn btn-hi" type="submit">Reveal my number</button>
+        <div class="result" hidden aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px">
+  <div class="wrap">
+    <div class="tool" data-daily></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Most searched</p><h2>Angel numbers people are looking up</h2></div><a class="btn btn-ghost" href="{{ '/angel-numbers/' | relative_url }}">All angel numbers →</a></div>
+    {% assign hot = "1111,333,3333,222,444,555,777,888,1212,111,999,19" | split: "," %}
+    <div class="num-grid">{% for k in hot %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-slot="mid"></div></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Free tools</p><h2>Calculators that show their working</h2></div><a class="btn btn-ghost" href="{{ '/tools/' | relative_url }}">All tools →</a></div>
+    <div class="grid">
+      <a class="card" href="{{ '/tools/life-path-calculator/' | relative_url }}"><span class="tag">Numerology</span><h3>Life Path calculator</h3><p>Your core number, step by step.</p></a>
+      <a class="card" href="{{ '/tools/name-number-calculator/' | relative_url }}"><span class="tag">Numerology</span><h3>Name numbers</h3><p>Expression, Soul Urge and Personality.</p></a>
+      <a class="card" href="{{ '/tools/number-explorer/' | relative_url }}"><span class="tag">Number science</span><h3>Number Explorer</h3><p>Primes, factors, binary, Roman — any number.</p></a>
+      <a class="card" href="{{ '/tools/business-name-calculator/' | relative_url }}"><span class="tag">Business</span><h3>Business name number</h3><p>Check a brand or domain before you buy.</p></a>
+      <a class="card" href="{{ '/tools/compound-interest-calculator/' | relative_url }}"><span class="tag">Money</span><h3>Compound interest</h3><p>Growth with monthly contributions.</p></a>
+      <a class="card" href="{{ '/tools/ai-token-cost-calculator/' | relative_url }}"><span class="tag">AI</span><h3>AI token cost</h3><p>What your AI product costs to run.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">The number behind the name</p><h2>193333, decoded</h2></div><a class="btn btn-ghost" href="{{ '/guides/the-number-193333/' | relative_url }}">Read the full story →</a></div>
+    <div class="stats">
+      <div class="stat"><b>7×71×389</b><span>Three distinct primes — a sphenic number with 8 divisors</span></div>
+      <div class="stat"><b>22</b><span>Digit sum: the Master Builder number</span></div>
+      <div class="stat"><b>19·3333</b><span>A new cycle (19 → 1) and the strongest creativity sequence</span></div>
+      <div class="stat"><b>1933</b><span>The year modern securities law and US deposit insurance began</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Learn</p><h2>Latest guides</h2></div><a class="btn btn-ghost" href="{{ '/guides/' | relative_url }}">All guides →</a></div>
+    {% assign gs = site.guides | sort: 'date' | reverse %}
+    <div class="grid">{% for g in gs limit:6 %}<a class="card" href="{{ g.url | relative_url }}"><span class="tag">{{ g.category }}</span><h3>{{ g.title }}</h3><p>{{ g.lead }}</p></a>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Watch</p><h2>Numbers, explained on video</h2></div><a class="btn btn-ghost" href="{{ '/videos/' | relative_url }}">More videos →</a></div>
+    <div class="videos">
+      <div class="video-card"><div class="yt" data-id="XXjlR2OK1kM" data-title="Number 1 and Benford's Law" role="button" tabindex="0" aria-label="Play: Number 1 and Benford's Law"></div><h3>Number 1 and Benford’s Law</h3><p class="muted">Numberphile</p></div>
+      <div class="video-card"><div class="yt" data-id="EK32jo7i5LQ" data-title="Why do prime numbers make these spirals?" role="button" tabindex="0" aria-label="Play: Why do prime numbers make these spirals?"></div><h3>Why do prime numbers make these spirals?</h3><p class="muted">3Blue1Brown</p></div>
+      <div class="video-card"><div class="yt" data-id="aircAruvnKk" data-title="But what is a neural network?" role="button" tabindex="0" aria-label="Play: But what is a neural network?"></div><h3>But what is a neural network?</h3><p class="muted">3Blue1Brown</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="cta-card" style="margin:0"><div><p class="eyebrow">For individuals · free</p><h2>Your Number Blueprint</h2><p>Life Path, Expression, Soul Urge and Personal Year in one clear report, delivered to your inbox.</p></div><a class="btn btn-hi" href="{{ '/free-report/' | relative_url }}">Get it free →</a></div>
+      <div class="cta-card" style="margin:0"><div><p class="eyebrow">For businesses</p><h2>Business Number Audit</h2><p>Brand name, domain, phone line and launch dates reviewed together — with practical memorability checks.</p></div><a class="btn btn-accent" href="{{ '/free-report/' | relative_url }}#business">Request an audit →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid">
+      <a class="card" href="{{ '/contests/' | relative_url }}"><span class="tag">Monthly</span><h3>Number Hunt contest</h3><p>Solve the puzzles, win sponsor-funded prizes and a winner spotlight.</p></a>
+      <a class="card" href="{{ '/support/' | relative_url }}"><span class="tag">Keep it free</span><h3>Support 193333</h3><p>Fund new tools, contests, prizes and the writers and developers behind them.</p></a>
+      <a class="card" href="{{ '/careers/' | relative_url }}"><span class="tag">We’re hiring</span><h3>Work with us</h3><p>Writers, researchers, developers and video creators.</p></a>
+      <a class="card" href="{{ '/advertise/' | relative_url }}"><span class="tag">Partners</span><h3>Advertise &amp; sponsor</h3><p>Sponsored tools, newsletter placements and partnerships.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow prose">
+    <section class="faq"><h2>Frequently asked questions</h2>{% for f in page.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</section>
+  </div>
+</section>
