@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{"name":"193333 — Number Intelligence Hub","short_name":"193333","start_url":"{{ '/' | relative_url }}","display":"standalone","background_color":"#0a0c16","theme_color":"#0a0c16","icons":[{"src":"{{ '/assets/img/favicon.svg' | relative_url }}","sizes":"any","type":"image/svg+xml"}]}

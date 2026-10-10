@@ -1,0 +1,60 @@
+---
+layout: default
+---
+{% assign d = site.data.digits[page.core] %}{% assign n = page.num %}
+<div class="page-hero angel-hero">
+  <div class="wrap narrow">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span>›</span> <a href="{{ '/angel-numbers/' | relative_url }}">Angel Numbers</a> <span>›</span> <span aria-current="page">{{ n }}</span></nav>
+    <div class="angel-head"><div class="angel-num">{{ n }}</div><div><p class="eyebrow">Angel number · {{ d.keyword }}</p><h1>Angel Number {{ n }} Meaning</h1><p class="lead">{{ page.intro }}</p></div></div>
+    <p class="byline">Reviewed by the 193333 Editorial Team · For reflection and entertainment</p>
+  </div>
+</div>
+<div class="wrap narrow prose">
+  <div class="quick"><div><span>Keyword</span><strong>{{ d.keyword }}</strong></div><div><span>Core number</span><strong>{{ page.core }}</strong></div><div><span>Digit sum</span><strong>{{ page.digit_sum }}</strong></div><div><span>Reduces to</span><strong>{{ page.root }}</strong></div></div>
+  <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#meaning">Meaning</a><a href="#spiritual">Spiritual</a><a href="#love">Love</a><a href="#twin">Twin flame</a><a href="#career">Career</a><a href="#money">Money</a><a href="#why">Why you see it</a><a href="#do">What to do</a><a href="#math">The math</a><a href="#faq">FAQ</a></nav>
+  <div class="ad-slot" data-slot="top"></div>
+  <h2 id="meaning">What does {{ n }} mean?</h2>
+  <p>{{ d.core }}</p>
+  <p>{% case page.reps %}{% when 4 %}Seeing the digit {{ page.core }} four times in a row is treated as the strongest, least ambiguous form of its message — readers describe {{ n }} as a signal that is hard to ignore.{% when 3 %}A triple digit is the classic angel-number form: {{ n }} is read as a clear, intentional repetition of the {{ page.core }} message rather than a coincidence.{% when 2 %}{{ n }} is a master number, which numerologists treat as a heightened, more demanding version of its root digit.{% else %}{{ n }} is a composite number, so its meaning comes from the digits inside it and the single number it reduces to ({{ page.root }}).{% endcase %}</p>
+  {% if page.digits.size > 1 %}<h3>The digits inside {{ n }}</h3><ul>{% for x in page.digits %}{% assign dx = site.data.digits[x] %}<li><strong>{{ x }} — {{ dx.keyword }}:</strong> {{ dx.short }}</li>{% endfor %}</ul>{% endif %}
+  {% if site.data.masters[n] %}<div class="callout"><strong>Master number {{ n }}.</strong> {{ site.data.masters[n] }}</div>{% endif %}
+  <h2 id="spiritual">Spiritual meaning of {{ n }}</h2>
+  <p>{{ d.spiritual }}</p>
+  <h2 id="love">{{ n }} in love and relationships</h2>
+  <p>{{ d.love }}</p>
+  <h2 id="twin">{{ n }} and twin flames</h2>
+  <p>{{ d.twin }}</p>
+  <div class="ad-slot" data-slot="mid"></div>
+  <h2 id="career">{{ n }} for career and business</h2>
+  <p>{{ d.career }}</p>
+  <h2 id="money">{{ n }} and money</h2>
+  <p>{{ d.money }}</p>
+  <h2 id="why">Why do I keep seeing {{ n }}?</h2>
+  <p>Psychologists describe a <em>frequency illusion</em>: once a pattern such as {{ n }} becomes meaningful to you, your attention starts catching it on clocks, receipts and licence plates that you previously ignored. That explanation does not make the experience less useful. Treat each sighting as a prompt to pause and ask what you were thinking about at that moment — the number is a bookmark for your own attention.</p>
+  <h2 id="do">What to do when you see {{ n }}</h2>
+  <ol>{% for a in d.action %}<li>{{ a }}</li>{% endfor %}</ol>
+  <p><strong>Watch out for:</strong> {{ d.shadow }}</p>
+  <h2 id="math">The math behind {{ n }}</h2>
+  <p>Beyond symbolism, {{ n }} is a real number with real properties:</p>
+  <table class="facts"><tbody>
+    <tr><th scope="row">Prime?</th><td>{% if page.prime %}Yes — {{ n }} is prime{% else %}No{% endif %}</td></tr>
+    <tr><th scope="row">Prime factorization</th><td>{{ page.factors }}</td></tr>
+    <tr><th scope="row">Digit sum</th><td>{{ page.digit_sum }}</td></tr>
+    <tr><th scope="row">Numerology reduction</th><td>{{ page.reduction }}</td></tr>
+    <tr><th scope="row">Binary</th><td><code>{{ page.binary }}</code></td></tr>
+    <tr><th scope="row">Hexadecimal</th><td><code>{{ page.hex }}</code></td></tr>
+  </tbody></table>
+  <p><a class="btn btn-sm btn-ghost" href="{{ '/tools/number-explorer/' | relative_url }}?n={{ n }}">Explore {{ n }} in the Number Explorer →</a></p>
+  <section class="faq" id="faq"><h2>{{ n }} — frequently asked questions</h2>
+    <details><summary>Is {{ n }} a lucky number?</summary><p>In numerology no number is purely lucky or unlucky. {{ n }} is associated with {{ d.keyword | downcase }}; whether that feels lucky depends on what you are working on right now.</p></details>
+    <details><summary>Is seeing {{ n }} a bad sign?</summary><p>No. Angel-number traditions treat repeating numbers as encouragement and prompts for reflection, not warnings. If {{ n }} keeps appearing during a stressful time, use it as a cue to slow down and choose your next step deliberately.</p></details>
+    <details><summary>What should I do after seeing {{ n }}?</summary><p>Note where you were and what you were thinking, then take one small action linked to {{ d.keyword | downcase }}. A short journal of sightings is the most practical way to see your own patterns.</p></details>
+  </section>
+  <h2>Related numbers</h2>
+  <div class="chip-row">{% for r in page.related %}<a class="chip" href="{{ '/angel-numbers/' | append: r | append: '/' | relative_url }}">{{ r }}</a>{% endfor %}<a class="chip" href="{{ '/angel-numbers/' | relative_url }}">All numbers →</a></div>
+  {% include helpful.html %}
+  {% include cta-lead.html %}
+  <div class="ad-slot" data-slot="bottom"></div>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does angel number {{ n }} mean?","acceptedAnswer":{"@type":"Answer","text":{{ page.intro | jsonify }}}},{"@type":"Question","name":"Is seeing {{ n }} a bad sign?","acceptedAnswer":{"@type":"Answer","text":"No. Angel-number traditions treat repeating numbers as encouragement and prompts for reflection, not warnings."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ '/' | absolute_url }}"},{"@type":"ListItem","position":2,"name":"Angel Numbers","item":"{{ '/angel-numbers/' | absolute_url }}"},{"@type":"ListItem","position":3,"name":"{{ n }}"}]}</script>

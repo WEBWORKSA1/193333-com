@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="page-hero">
+  <div class="wrap {% unless page.wide %}narrow{% endunless %}">
+    {% if page.crumb %}<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span>›</span> {% if page.crumb_url %}<a href="{{ page.crumb_url | relative_url }}">{{ page.crumb }}</a> <span>›</span> {% endif %}<span aria-current="page">{{ page.short | default: page.title }}</span></nav>{% endif %}
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.heading | default: page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+    {% if page.updated %}<p class="byline">Reviewed by the 193333 Editorial Team · Updated {{ page.updated | date: "%B %-d, %Y" }}</p>{% endif %}
+  </div>
+</div>
+<div class="wrap {% unless page.wide %}narrow{% endunless %} prose">
+  <div class="ad-slot" data-slot="top"></div>
+  {{ content }}
+  {% if page.faq %}<section class="faq"><h2>Frequently asked questions</h2>{% for f in page.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</section>{% endif %}
+  {% unless page.no_cta %}{% include helpful.html %}{% include cta-lead.html %}{% endunless %}
+  <div class="ad-slot" data-slot="bottom"></div>
+</div>

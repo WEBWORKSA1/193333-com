@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article>
+<div class="page-hero">
+  <div class="wrap narrow">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> <span>›</span> <a href="{{ '/guides/' | relative_url }}">Guides</a> <span>›</span> <span aria-current="page">{{ page.short | default: page.title }}</span></nav>
+    <p class="eyebrow">{{ page.category }} · {{ page.minutes }} min read</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.lead }}</p>
+    <p class="byline">By the 193333 Editorial Team · Published {{ page.date | date: "%B %-d, %Y" }}</p>
+  </div>
+</div>
+<div class="wrap narrow prose">
+  <div class="ad-slot" data-slot="top"></div>
+  {{ content }}
+  {% if page.faq %}<section class="faq"><h2>Frequently asked questions</h2>{% for f in page.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</section>{% endif %}
+  <div class="author-box"><div class="avatar">19</div><div><strong>193333 Editorial Team</strong><p class="muted">We research numbers across mathematics, commerce and culture, show our working, and correct errors publicly. Read our <a href="{{ '/editorial-standards/' | relative_url }}">editorial standards</a>.</p></div></div>
+  <p class="cite muted"><strong>Cite this page:</strong> 193333 Editorial Team. “{{ page.title }}.” 193333.com, {{ page.date | date: "%Y" }}. {{ page.url | absolute_url }}</p>
+  {% include helpful.html %}
+  {% include cta-lead.html %}
+  <div class="ad-slot" data-slot="bottom"></div>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"datePublished":"{{ page.date | date_to_xmlschema }}","author":{"@type":"Organization","name":"193333 Editorial Team"},"publisher":{"@type":"Organization","name":"193333"},"mainEntityOfPage":"{{ page.url | absolute_url }}"}</script>
+</article>
