@@ -16,16 +16,17 @@ faq:
   - q: "Which angel number is the most powerful?"
     a: "Quadruple numbers such as 1111 and 3333 are traditionally read as the strongest forms of a digit's message, and the master numbers 11, 22 and 33 carry special weight in numerology."
 ---
+{% assign triples = "111,222,333,444,555,666,777,888,999,000" | split: "," %}{% assign quads = "1111,2222,3333,4444,5555,6666,7777,8888,9999" | split: "," %}{% assign others = "1010,1212,1234,1919,2020,11,19,22,33" | split: "," %}
 <div class="search-box"><form action="{{ '/tools/number-explorer/' | relative_url }}" method="get" class="inline-form"><label class="sr" for="look">Look up any number</label><input id="look" name="n" inputmode="numeric" placeholder="Look up any number, e.g. 193333"><button class="btn btn-hi" type="submit">Explore</button></form></div>
 
 <h2>Triple numbers</h2>
-<div class="num-grid">{% for k in "111,222,333,444,555,666,777,888,999,000" | split: "," %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
+<div class="num-grid">{% for k in triples %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
 
 <h2>Quadruple numbers</h2>
-<div class="num-grid">{% for k in "1111,2222,3333,4444,5555,6666,7777,8888,9999" | split: "," %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
+<div class="num-grid">{% for k in quads %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
 
 <h2>Mirror, sequence and master numbers</h2>
-<div class="num-grid">{% for k in "1010,1212,1234,1919,2020,11,19,22,33" | split: "," %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
+<div class="num-grid">{% for k in others %}<a class="num-tile" href="{{ '/angel-numbers/' | append: k | append: '/' | relative_url }}">{{ k }}</a>{% endfor %}</div>
 
 <div class="ad-slot" data-slot="mid"></div>
 

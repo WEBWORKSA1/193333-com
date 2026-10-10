@@ -1,0 +1,20 @@
+---
+title: "Loan Payment Calculator"
+short: Loan calculator
+crumb: Tools
+crumb_url: /tools/
+eyebrow: Money calculator
+heading: "Loan Payment Calculator"
+lead: "Monthly payment, total repaid and total interest for any fixed-rate loan."
+description: "Free loan payment calculator for fixed-rate loans: monthly payment, total paid and total interest."
+updated: 2026-10-10
+---
+<form class="tool" data-tool="loan">
+  <h2>Estimate your payment</h2>
+  <div class="row3"><div class="field"><label for="amount">Loan amount ($)</label><input id="amount" name="amount" type="number" step="any" value="25000"></div><div class="field"><label for="rate">Annual rate (%)</label><input id="rate" name="rate" type="number" step="any" value="8"></div><div class="field"><label for="years">Term (years)</label><input id="years" name="years" type="number" step="any" value="5"></div></div>
+  <button class="btn btn-hi" type="submit">Calculate</button>
+  <div class="result" hidden aria-live="polite"></div>
+</form>
+<h2>Formula</h2>
+<p><code>Payment = P × r ÷ (1 − (1 + r)^−n)</code>, where P is the amount borrowed, r the monthly rate (annual rate ÷ 12) and n the number of monthly payments. Lenders may add fees not included here.</p>
+<p class="muted">Educational estimate only — not financial advice.</p>

@@ -1,0 +1,25 @@
+---
+title: "AI Token Cost Calculator for Apps and Chatbots"
+short: AI token cost
+crumb: Tools
+crumb_url: /tools/
+eyebrow: AI business calculator
+heading: "AI Token Cost Calculator"
+lead: "Estimate what an AI chatbot, writing tool or agent will cost to run each month, from token counts and your provider’s prices."
+description: "Free AI token cost calculator: estimate per-request, monthly and annual costs for large language model apps from input/output tokens and per-million-token prices."
+updated: 2026-10-10
+faq:
+  - q: "What is a token?"
+    a: "A token is a chunk of text that a language model reads or writes — often a short word or part of a word. In English, a rough rule of thumb is about four characters, or three-quarters of a word, per token."
+  - q: "Why are output tokens priced differently?"
+    a: "Most providers charge more per output token than per input token, because generating text is more compute-intensive than reading it."
+---
+<form class="tool" data-tool="ai-cost">
+  <h2>Estimate AI running costs</h2>
+  <div class="row3"><div class="field"><label for="requests">Requests per month</label><input id="requests" name="requests" type="number" step="any" value="50000"></div><div class="field"><label for="tin">Input tokens per request</label><input id="tin" name="tin" type="number" step="any" value="1500"></div><div class="field"><label for="tout">Output tokens per request</label><input id="tout" name="tout" type="number" step="any" value="400"></div></div>
+  <div class="row2"><div class="field"><label for="pin">Price per 1M input tokens ($)</label><input id="pin" name="pin" type="number" step="any" value="3"></div><div class="field"><label for="pout">Price per 1M output tokens ($)</label><input id="pout" name="pout" type="number" step="any" value="15"></div></div>
+  <button class="btn btn-hi" type="submit">Calculate</button>
+  <div class="result" hidden aria-live="polite"></div>
+</form>
+<h2>How to use the estimate</h2>
+<p>The default prices are placeholders — replace them with the current rates on your provider’s pricing page. Then compare the monthly cost with your revenue per user. A product that costs $0.01 per request and earns $0.002 in ad revenue per request loses money at scale; caching repeated prompts, trimming context and routing simple tasks to smaller models are the usual levers. Read more in <a href="{{ '/guides/numbers-that-run-ai/' | relative_url }}">The numbers that run AI</a>.</p>

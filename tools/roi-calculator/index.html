@@ -1,0 +1,22 @@
+---
+title: "ROI Calculator: Return on Investment and CAGR"
+short: ROI calculator
+crumb: Tools
+crumb_url: /tools/
+eyebrow: Business calculator
+heading: "ROI &amp; CAGR Calculator"
+lead: "Measure the total and annualised return of any investment — a website, a domain, a marketing campaign or a stock."
+description: "Free ROI calculator with annualized return (CAGR). Compare investments, campaigns and projects on equal terms."
+updated: 2026-10-10
+faq:
+  - q: "What is the difference between ROI and CAGR?"
+    a: "ROI is the total percentage gain over the whole period. CAGR (compound annual growth rate) converts that into an equivalent yearly rate, so investments held for different lengths of time can be compared."
+---
+<form class="tool" data-tool="roi">
+  <h2>Calculate return</h2>
+  <div class="row3"><div class="field"><label for="cost">Amount invested ($)</label><input id="cost" name="cost" type="number" step="any" value="5000"></div><div class="field"><label for="gain">Final value ($)</label><input id="gain" name="gain" type="number" step="any" value="8000"></div><div class="field"><label for="years">Years held</label><input id="years" name="years" type="number" step="any" value="3"></div></div>
+  <button class="btn btn-hi" type="submit">Calculate</button>
+  <div class="result" hidden aria-live="polite"></div>
+</form>
+<h2>Formulas</h2>
+<p><code>ROI = (final value − cost) ÷ cost</code> and <code>CAGR = (final value ÷ cost)^(1 ÷ years) − 1</code>. A 60% ROI over three years is a CAGR of about 17%; the same 60% over ten years is under 5% a year.</p>

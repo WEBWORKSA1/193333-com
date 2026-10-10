@@ -1,0 +1,24 @@
+---
+title: "Number Explorer: Facts About Any Number"
+short: Number Explorer
+crumb: Tools
+crumb_url: /tools/
+eyebrow: Number science
+heading: "Number Explorer"
+lead: "Enter any whole number to see whether it is prime, its factors, divisors, digit sum, binary, hexadecimal and Roman forms — instantly."
+description: "Free number facts tool: check if a number is prime, see its prime factorization, divisors, digital root, binary, octal, hex and Roman numeral."
+updated: 2026-10-10
+faq:
+  - q: "What is a digital root?"
+    a: "The single digit you reach by repeatedly adding a number's digits. It always equals the number's remainder after division by 9, with 9 in place of 0."
+  - q: "How large a number can I enter?"
+    a: "Any whole number up to 9,007,199,254,740,991, the largest integer JavaScript represents exactly."
+---
+<form class="tool" data-tool="explorer">
+  <h2>Explore a number</h2>
+  <div class="field"><label for="num">Whole number</label><input id="num" name="num" inputmode="numeric" placeholder="e.g. 193333" required></div>
+  <button class="btn btn-hi" type="submit">Explore</button>
+  <div class="result" hidden aria-live="polite"></div>
+</form>
+<h2>Example: 193333</h2>
+<p>193333 is odd and composite: 193333 = 7 × 71 × 389, three distinct primes, so it has exactly 8 divisors. Its digits sum to 22 — a master number in numerology — and its digital root is 4. In binary it is <code>101111001100110101</code> and in hexadecimal <code>2F335</code>. Read the full story in <a href="{{ '/guides/the-number-193333/' | relative_url }}">The number 193333, decoded</a>.</p>

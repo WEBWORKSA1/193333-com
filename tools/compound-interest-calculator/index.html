@@ -1,0 +1,26 @@
+---
+title: "Compound Interest Calculator with Monthly Contributions"
+short: Compound interest
+crumb: Tools
+crumb_url: /tools/
+eyebrow: Money calculator
+heading: "Compound Interest Calculator"
+lead: "See how savings or investments grow with compounding and regular monthly contributions — with a year-by-year table."
+description: "Free compound interest calculator with monthly contributions, compounding frequency and a year-by-year growth table."
+updated: 2026-10-10
+faq:
+  - q: "What is the compound interest formula?"
+    a: "For a lump sum, A = P(1 + r/n)^(nt), where P is principal, r the annual rate, n compounding periods per year and t years. Regular contributions are added each period."
+  - q: "Is this financial advice?"
+    a: "No. It is an educational estimate. Real returns vary, and fees and taxes reduce growth."
+---
+<form class="tool" data-tool="compound">
+  <h2>Project your growth</h2>
+  <div class="row2"><div class="field"><label for="principal">Starting amount ($)</label><input id="principal" name="principal" type="number" min="0" step="any" value="10000"></div><div class="field"><label for="contrib">Monthly contribution ($)</label><input id="contrib" name="contrib" type="number" min="0" step="any" value="300"></div></div>
+  <div class="row3"><div class="field"><label for="rate">Annual rate (%)</label><input id="rate" name="rate" type="number" step="any" value="7"></div><div class="field"><label for="years">Years</label><input id="years" name="years" type="number" min="1" max="80" value="20"></div><div class="field"><label for="freq">Compounding</label><select id="freq" name="freq"><option value="12">Monthly</option><option value="4">Quarterly</option><option value="1">Annually</option><option value="365">Daily</option></select></div></div>
+  <button class="btn btn-hi" type="submit">Calculate</button>
+  <div class="result" hidden aria-live="polite"></div>
+</form>
+<h2>The rule of 72</h2>
+<p>A quick mental shortcut: divide 72 by the annual percentage rate to estimate how many years it takes money to double. At 7%, that is about 10.3 years; at 9%, about 8. The calculator above gives the precise figure, including the effect of regular contributions — which, over long periods, often matter more than the starting amount.</p>
+<p class="muted">Educational estimate only — not financial advice. Returns are not guaranteed.</p>
