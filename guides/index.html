@@ -1,0 +1,13 @@
+---
+title: "Guides: Numbers in Commerce, AI, Money and Numerology"
+short: Guides
+crumb: Guides
+eyebrow: Research &amp; guides
+heading: "Guides to the numbers that shape decisions"
+lead: "How numbers work in business, pricing, AI and culture — and how numerology interprets them. Researched, sourced and written in plain language."
+description: "In-depth guides on the number 193333, angel numbers, pricing psychology, memorable numbers in commerce, AI metrics and master number 22."
+wide: true
+no_cta: false
+---
+{% assign gs = site.guides | sort: 'date' | reverse %}
+<div class="grid">{% for g in gs %}<a class="card" href="{{ g.url | relative_url }}"><span class="tag">{{ g.category }} · {{ g.minutes }} min</span><h3>{{ g.title }}</h3><p>{{ g.description }}</p></a>{% endfor %}</div>
