@@ -2,10 +2,8 @@
 title: "193333"
 brand: "193333 — Number Intelligence Hub"
 description: "Angel number meanings, numerology calculators, number facts and business calculators — free, fast and explained step by step."
-# While served from github.io keep these two lines. After pointing DNS at GitHub Pages
-# and adding the custom domain, change url to https://193333.com and baseurl to "".
-url: "https://webworksa1.github.io"
-baseurl: "/193333-com"
+url: "https://193333.com"
+baseurl: ""
 lang: en
 timezone: UTC
 adsense_client: "ca-pub-6620975821265271"
